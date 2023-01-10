@@ -33,7 +33,7 @@ In conclusion on one line within an orchestrated logical expression all even
 numbers have been eliminated except for the number two. Also, using operator
 precedence as the left value of logical or (||) evaluates to true on even
 numbers the right value is not examined saving many operations by using
-(optimized order processing conditional logic).
+optimized conditional logic.
 
 With even numbers eliminated the following loop starts testing numbers
 as possibly prime starting with the first non-prime odd number, nine.
