@@ -1,7 +1,7 @@
 /*
 Program:FindPrime
 Author:Phillip McCullough
-Date:1/9/2022
+Date:1/10/2022
 C/Cpp:11+ ANSI Standard
 
 This program is a simple example of optimization through order of processing
@@ -26,12 +26,14 @@ int main()
 	do
 	{
 		cout << "\nType a number you would like to check and press [enter/return]: ";
-		while (!(cin >> number))
+		cin >> number;
+		while (cin.fail())
 		{
 			cin.clear();
 			cin.ignore(INT_MAX, '\n');
 			cout << "\nYou may only enter a number.\n"
 				"Type the number you would like to check and press [enter/return]: ";
+			cin >> number;
 		}
 		cin.ignore(INT_MAX, '\n');
 
@@ -60,7 +62,7 @@ bool findPrime(int check_number)
 	*/
 
 	// The line below is the one we want to examine most.
-	if (check_number % 2 == 0 && check_number != 2 || check_number == 1) 
+	if (check_number % 2 == 0 && check_number != 2 || check_number <= 1) 
 		return false;
 	/*
 	Let's start with the first set of conditions.
@@ -78,24 +80,22 @@ bool findPrime(int check_number)
 	Because the number one is unable to be divided and remain an integer the number
 	one is controversially excluded from prime numbers. Rather than creating a
 	separate statement using operator precedence with the logical or (||) operator
-	only in the case of odd numbers check_number will be compared via the equality
-	operator (==) to exclude one as a prime number.
+	only in the case of odd numbers check_number will be compared via the comparison
+	operator (<=) to exclude one and negitive numbers as prime.
 
 	In conclusion on one line within an orchestrated logical expression all even
 	numbers have been eliminated except for the number two. Also, using operator
 	precedence as the left value of logical or (||) evaluates to true on even
 	numbers the right value is not examined saving many operations by using
 	(optimized order processing conditional logic).
-	*/
+	
 
-
-	/*
 	With even numbers eliminated the following loop starts testing numbers
 	as possibly prime starting with the first non-prime odd number, nine.
 	*/
 	for (int i = 3; i < range_max; i++)
 		if (check_number % i == 0)
 			return false;
-  // True is returned as check_number is declared to be a prime number.
+     // True is returned as check_number is declared to be a prime number.
 	return true;
 }
