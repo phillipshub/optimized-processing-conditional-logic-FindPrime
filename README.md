@@ -35,10 +35,10 @@ precedence as the left value of logical or (||) evaluates to true on even
 numbers the right value is not examined saving many operations by using
 optimized conditional logic.
 
-With even numbers eliminated the following loop starts testing numbers
-as possibly prime starting with the first non-prime odd number, nine.
+With even numbers eliminated the following loop starts testing odd numbers
+as possibly prime starting with the first non-prime odd number: nine.
 	
-for (int i = 3; i < range_max; i++)
+for (int i = 3; i < range_max; i += 2)
   if (check_number % i == 0)
     return false;
 True is returned as check_number is declared to be a prime number.
