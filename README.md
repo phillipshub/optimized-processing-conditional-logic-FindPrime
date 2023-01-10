@@ -4,7 +4,7 @@ Here is a basic example of optimized conditional logic.
 
 The main.cpp is a complete program with in-depth documentation and simple explanations of how I implemented optimized conditional logic saving substantial computation in essentially two logical expressions condensing a common beginners method for testing prime numbers.
 
-You may read the example code extracted from the program here if you like; although, reading the comments in findPrime() of main.cpp provides a more structured view.
+You may read the example code extracted from the program here, viewed from screenshot on main branch of this repository, or reading the comments in findPrime() of main.cpp.
 
 /* Crash course for the curious before taking a closer look at process logic.
 Conditional expressions must evaluate as true for logical statements to be
