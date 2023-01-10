@@ -4,9 +4,9 @@ Author:Phillip McCullough
 Date:1/10/2022
 C/Cpp:11+ ANSI Standard
 
-This program is a simple example of optimization through order of processing
-conditional logic. Using the task of determining if a number is prime, I will
-express the meaning of optimization through order of processing.
+This program is a basic example of optimized conditional logic. Using the
+task of determining if a number is prime, I express the meaning and value of
+optimized conditional logic processing.
 -------10--------20--------30--------40--------50--------60--------70--------80
 */
 #include <iostream>
