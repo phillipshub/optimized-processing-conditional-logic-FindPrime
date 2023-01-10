@@ -1,8 +1,10 @@
 # optimized-processing-conditional-logic-FindPrime
 
-This program is a simple example of optimization through order of processing conditional logic. Using the task of determining if a number is prime, I will express the meaning of optimization through order of processing.
+Here is a basic example of optimized conditional logic.
 
-You may read the example code extracted from the program if you like. I recommend reading the comments in bool findPrime() personally in main.cpp for a more structured view.
+The main.cpp is a complete program with in-depth documentation and simple explanations of how I implemented optimized conditional logic saving substantial computation in essentially two logical expressions condensing a common beginners method for testing prime numbers.
+
+You may read the example code extracted from the program here if you like; although, reading the comments in findPrime() of main.cpp provides a more structured view.
 
 /* Crash course for the curious before taking a closer look at process logic.
 Conditional expressions must evaluate as true for logical statements to be
