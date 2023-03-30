@@ -9,6 +9,8 @@ The main.cpp is a complete program with in-depth documentation and simple explan
 Conditional expressions must evaluate as true for logical statements to be
 executed within a program. 
 
+The following screenshot is a live code example with detailed explanations in the comments. 
+
 ![optimized conditional logic FindPrime](https://user-images.githubusercontent.com/61360844/228709241-efc76360-d360-4067-ad5e-3acbfc791819.png)
 
 
