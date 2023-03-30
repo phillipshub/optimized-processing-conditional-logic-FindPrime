@@ -1,5 +1,7 @@
 # optimized-processing-conditional-logic-FindPrime
 
+![optimized conditional logic FindPrime](https://user-images.githubusercontent.com/61360844/228709241-efc76360-d360-4067-ad5e-3acbfc791819.png)
+
 Here is a basic example of optimized conditional logic.
 
 The main.cpp is a complete program with in-depth documentation and simple explanations of how I implemented optimized conditional logic saving substantial computation in essentially two logical expressions condensing a common beginners method for testing prime numbers.
